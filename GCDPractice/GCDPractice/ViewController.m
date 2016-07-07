@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestSingle.h"  //  单例宏
 
 @interface ViewController ()
 @property(nonatomic, strong)UIImageView *imageView;
@@ -105,6 +106,10 @@
 //    [self testdispatch_apply];
     
 //    [self combineImage];
+    
+    //  单例两行代码实现
+    [[TestSingle sharedTestSingle] testNslog];
+
     
 }
 
